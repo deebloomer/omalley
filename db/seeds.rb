@@ -6,22 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-puts "PROJECTS DELETED" if Project.delete_all
-
-begin # Project.create..
-
-Project.create!({project_id: 1, name: "St. Mel´s Cathedral, Longford', description: 'Re-plastering of the entire interior of St. Mel's C...", design_team: '', project_type_id: 2, running_order: 100 })
-Project.create!({project_id: 3, name: 'Belvedere House, Dublin', description: 'Restoration of the Michael Stapleton ceilings and m...', design_team: '', project_type_id: 1, running_order: nil })
-Project.create!({project_id: 6, name: 'Fota House Orangery', description: 'Repair to lime rendering of the beautiful orangery ...', design_team: '', project_type_id: 2, running_order: nil })
-Project.create!({project_id: 7, name: 'Ligouri House. UCD, Blackrock', description: 'Stabilising and conserving the original decorative ...', design_team: '', project_type_id: 1, running_order: nil })
-Project.create!({project_id: 11, name: 'Castletown House, Celbridge', description: '', design_team: '', project_type_id: 1, running_order: 400 })
-Project.create!({project_id: 12, name: 'Newman House, ', description: 'UCD, Dublin', design_team: '', project_type_id: 1, running_order: 500 })
-Project.create!({project_id: 13, name: 'Catholic University School', description: 'Leeson Street, Dublin ', design_team: '', project_type_id: 2, running_order: 600 })
-Project.create!({project_id: 14, name: 'Brewery Hostel', description: 'Thomas Street, Dublin', design_team: '', project_type_id: 1, running_order: 700 })
-Project.create!({project_id: 31, name: 'Chapel at Dunnes Stores, Cornelscourt', description: '', design_team: nil, project_type_id: 7, running_order: nil })
-Project.create!({project_id: 44, name: 'Emo Court', description: 'External Lime plastering to this 18th Century neo-c...', design_team: '', project_type_id: 3, running_order: 200 })
-end
-
 puts "PHOTOS DELETED" if Photo.delete_all
 begin # Photos.create...
   Photo.create!({project_id:1, caption: 'Barrel Vaulted Ceiling Restored', image_url:'Longford_ceiling_La.JPG', running_order: 100 })
