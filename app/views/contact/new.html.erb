@@ -1,0 +1,51 @@
+<%= form_for @contact_us, :url => contact_path do |form| %>     <!--this gets shown when the person hits the contact button NAMING CONVENTION HERE-->
+  <div class="row">
+
+    <fieldset class="fields">
+      <div class="col-sm-3">
+        <div class="field ">
+          <%= form.label :name %>  <br/>
+          <%= form.text_field :name %>   <br/>
+        </div>
+        <div class="field">
+          <%= form.label :email %>   <br/>
+          <%= form.text_field :email %>
+        </div>
+        <div class="field">
+          <%= form.label :subject %>
+          <%= form.text_field :subject %>
+        </div>
+
+        <h5>Phone</h5> <h4 style = text-shadow:none >+353 1 2116706 / 2116708</h4>
+        <h5>Email</h5> <h4 style = text-shadow:none  ><a href="mailto:info@omalleyplastering.com"> info@omalleyplastering.com</a> </h4>
+
+      </div>
+      <div class="col-sm-3">
+        <div class="field">
+        <%= form.label :message %>   <br/>
+        <%= form.text_area :body, cols: 35, rows: 15 %>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!--<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=LatLng(53.19, -6.1215604)&sensor=false'" %>-->
+      </div>
+      <div class="col-sm-3">
+        <h5> Unit 43</h5>
+        <h5> Ballywaltrim Business Park</h5>
+        <h5> Boghall Road</h5>
+        <h5> Bray</h5>
+        <h5> Co. Wicklow</h5>
+        <h5> Fax +353 1 2022708</h5>
+      </div>
+    </fieldset>
+
+    <fieldset class="actions">
+      <%= form.submit "Send" %>
+
+    </fieldset>
+
+
+
+  </div>
+
+<% end %>
