@@ -17,41 +17,41 @@
   </div>
 
 <% end %>
+<!--
 
 
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Design team</th>
+    <th>Type</th>
+    <th>Running order</th>
+    <th>ID</th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<!--<table class="table table-bordered table-striped">-->
-  <!--<tr>-->
-    <!--<th>Name</th>-->
-    <!--<th>Description</th>-->
-    <!--<th>Design team</th>-->
-    <!--<th>Type</th>-->
-    <!--<th>Running order</th>-->
-    <!--<th>ID</th>-->
-    <!--<th></th>-->
-    <!--<th></th>-->
-  <!--</tr>-->
-
-<!--<% @projects.each do |project| %>-->
-  <!--<tr>-->
-    <!--<td><%= project.name %></td>-->
-    <!--<td><%= project.description %></td>-->
-    <!--<td><%= project.design_team %></td>-->
-    <!--<td><%= project.project_type.try(:name) %></td>-->
-    <!--<td><%= project.running_order %></td>-->
-    <!--<td><%= project.id %></td>-->
-    <!--<td><%= link_to 'Show', project %></td>-->
-    <!--<td><%= link_to 'Edit', edit_project_path(project) %></td>-->
-    <!--<td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-  <!--</tr>-->
-<!--<% end %>-->
-<!--</table>-->
-
-
-<!--<br />-->
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.name %></td>
+    <td><%= project.description %></td>
+    <td><%= project.design_team %></td>
+    <td><%= project.project_type.try(:name) %></td>
+    <td><%= project.running_order %></td>
+    <td><%= project.id %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
 
 
-    <!--<%= link_to 'New Project', new_project_path %>-->
+&lt;!&ndash;<br />&ndash;&gt;
+
+
+    <%= link_to 'New Project', new_project_path %>-->
 
 
 <div class="container-fluid">

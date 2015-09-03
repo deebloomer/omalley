@@ -15,7 +15,7 @@
 
   <div class="container marketing">
     <% if @projects.count > 8 %>
-      <%= render partial: 'projects/under_carousel', locals: {projects_or_photos_or_testim: @projects[4..7]} %>
+      <%= render partial: 'projects/under_carousel', locals: {projects_or_photos_or_testim: @projects[4..11].values_at(7,3,5,6)} %>
     <% end %>
    </div>
 </div>

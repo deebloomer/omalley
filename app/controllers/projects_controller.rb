@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
-
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_project
   before_filter :get_variables
 
   def index
@@ -88,7 +88,12 @@ class ProjectsController < ApplicationController
   def get_variables
     @project_types = ProjectType.all
     @projects = Project.all
+  end
 
+  def invalid_project
+    logger.error "attempt to access invalid project #{params[:id]}"
+    flash[:notice] = "Sorry, I couldn't find that!"                # this does not seem to work
+    redirect_to projects_url
   end
 
 end

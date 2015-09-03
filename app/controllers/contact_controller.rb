@@ -18,3 +18,4 @@ class ContactController < ApplicationController
 
   end
 
+# re contact_us.txt.erb  this is the format that the mailer will use to deliver the mail NAME OF THIS (ie the txt.erb file)NEEDS TOBE THE NAME OF THE METHOD IN THE MAILER GET RID OF COMMENTS LATER
