@@ -46,10 +46,10 @@ begin # Photos.create...
 
 
 
-  Photo.create!({project_id:3, caption: 'Michael Stapleton Ceiling Restored', image_url:'belv_db3.jpg', running_order: 100 })
+  Photo.create!({project_id:3, caption: 'Michael Stapleton Ceiling Restored', image_url:'belv_db_3.jpg', running_order: 100 })
   Photo.create!({project_id:3, caption: 'Ceiling at Belvedere House', image_url:'BH-Blessing&ReOpening005_hrz.jpg', running_order: 200 })
   Photo.create!({project_id:3, caption: 'belv', image_url:'BH-Blessing&ReOpening009_hrz.jpg', running_order: 300 })
-  Photo.create!({project_id:3, caption: 'belv repeat', image_url:'belv_db_3.jpg', running_order: 400 })
+  Photo.create!({project_id:3, caption: 'belv repeat', image_url:'belv_db3.jpg', running_order: 400 })
   Photo.create!({project_id:3, caption: 'Ceiling at Belvedere House', image_url:'Belvedere_ceiling_L.jpg', running_order: 500 })
   Photo.create!({project_id:3, caption: 'belv', image_url:'belv_db4.JPG', running_order: 600 })
   Photo.create!({project_id:3, caption: 'belv repeat', image_url:'belv_db_7.jpg', running_order: 700 })

@@ -24,6 +24,9 @@ $navbar-inverse-link-hover-color: #aaa;
    border: 0px;
    margin: 0px
  }
+ul {
+  list-style-type: none;
+}
 .carousel {
     width: 80%;
     margin : 0 auto; /* center your carousel if other than 100% */
@@ -78,6 +81,7 @@ h1, h2, h3, h4 {
     margin-right: 50px;   *//*this doesn't work     *//*
 
 }*/
+
 
 a.white_email:link {
   color: #ff0000;     /*these dont seem to work - come back to it, it is for the email in the footer.     */

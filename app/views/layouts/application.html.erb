@@ -97,7 +97,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <% this_testimonial = @testimonials.first  %>
+              <% this_testimonial = Testimonial.find(Testimonial.pluck(:id).sample)  %>
               <h4> What people say about O'Malley Plastering </h4>             <!--h5 s are blocks-->
               <strong><em><%= this_testimonial.name  %>:</em></strong>
               <%= truncate(this_testimonial.description, length: 235)  %>

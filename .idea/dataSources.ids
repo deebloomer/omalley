@@ -43,4 +43,7 @@
       <column name="seq" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="Rails omalley: production" uuid="906b4f54-5a22-43ee-846c-8293610f39f4">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
